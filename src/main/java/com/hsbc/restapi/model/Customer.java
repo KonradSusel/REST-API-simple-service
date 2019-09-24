@@ -1,12 +1,13 @@
 package com.hsbc.restapi.model;
+import java.util.Map;
 
 public class Customer {
 
     private int id;
     private String name;
-    private String address;
+    private Map<String, String> address;
 
-    public Customer(int id, String name, String address) {
+    public Customer(int id, String name, Map<String, String> address) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -28,11 +29,11 @@ public class Customer {
         this.name = name;
     }
 
-    public String getAddress() {
+    public Map<String, String> getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Map<String, String> address) {
         this.address = address;
     }
 }
